@@ -1,12 +1,10 @@
-services:
- - type: web
+ services:
+  - type: web
     name: n8n-agent
     env: docker
-    repo: https://github.com/ELAIS-UID/n8n-ai-agent
     region: oregon
-    branch: main
     plan: free
     autoDeploy: true
-    dockerContext: .
-    dockerfilePath: ./Dockerfile
+    dockerCommand: docker-compose up
+
 
